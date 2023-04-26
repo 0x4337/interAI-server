@@ -155,7 +155,7 @@ router.post("/generate", async (req, res) => {
     const messages = req.body.messages;
 
     const { data } = await openai.createChatCompletion({
-      //   model: "gpt-3.5-turbo",
+      // model: "gpt-3.5-turbo",
       model: "gpt-4",
       messages: messages,
     });
